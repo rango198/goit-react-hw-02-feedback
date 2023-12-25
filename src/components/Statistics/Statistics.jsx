@@ -1,3 +1,5 @@
+import { Notification } from '../Notification/Notification';
+
 export const Statistics = ({
   goodCounter,
   neutralCounter,
@@ -5,7 +7,7 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => {
-  return (
+  return total ? (
     <>
       <ul>
         <li>Good: {goodCounter}</li>
@@ -15,5 +17,7 @@ export const Statistics = ({
       <p>Total feedbacks: {total}</p>
       <p>Positive Feedbacks: {positivePercentage} %</p>
     </>
+  ) : (
+    <Notification msg="There is no feedback" />
   );
 };
