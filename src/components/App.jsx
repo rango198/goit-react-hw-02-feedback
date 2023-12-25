@@ -3,11 +3,12 @@ export const App = () => {
     <div
       style={{
         height: '100vh',
+        fontFamily: 700,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#be2525',
       }}
     >
       React homework template
