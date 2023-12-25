@@ -1,3 +1,5 @@
+import { TitleNotifi } from './Notification.styled';
+
 export const Notification = ({ msg }) => {
-  return <h2>{msg}</h2>;
+  return <TitleNotifi>{msg}</TitleNotifi>;
 };
